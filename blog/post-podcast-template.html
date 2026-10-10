@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TRAVIS: replace TITLE and DESCRIPTION below for each new episode -->
+<title>EPISODE TITLE HERE — Plum Couch Hospitality</title>
+<meta name="description" content="One-sentence description of this episode.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boogaloo&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brand-mark" src="/assets/img/plane-smoke-cream.png" alt="Plum Couch Hospitality"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/principles/">Principles</a></li>
+        <li><a href="/work/">The Work</a></li>
+        <li><a href="/blog/" aria-current="page">Insights</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="wrap">
+      <div class="eyebrow">Insights · Podcast · <span>Month Year</span></div>
+      <h1>EPISODE TITLE HERE</h1>
+      <p class="lede">One-line standfirst: who the host is and what the episode covers.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width: 720px;">
+
+      <!--
+        TRAVIS: swap VIDEO_ID for the part of the YouTube URL after "v=" or
+        after "youtu.be/" (e.g. youtube.com/watch?v=ABC123xyz -> VIDEO_ID is ABC123xyz).
+        Same id goes in the thumbnail URL on /blog/index.html's card for this episode:
+        https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg — no upload needed, YouTube hosts it.
+      -->
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="EPISODE TITLE HERE"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p>
+        A paragraph or two of show notes: what gets covered, a pull-quote moment,
+        timestamps if you want them. Doesn't need to be long, the episode does the work.
+      </p>
+
+      <hr style="border: none; border-top: 1px solid var(--color-border); margin: 48px 0 32px;">
+      <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+        <strong style="color: var(--color-text);">Travis Grode</strong> is the owner of
+        Plum Couch Hospitality, helping operators build player development and VIP host
+        programs that run as a system. <a href="/contact/">Start a conversation</a> or
+        <a href="/work/">see the work</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-copy"><img class="footer-mark" src="/assets/img/plane-smoke-cream.png" alt=""><span>&copy; <span id="year"></span> Plum Couch Hospitality</span></div>
+    <div><a href="/contact/">Contact</a></div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
