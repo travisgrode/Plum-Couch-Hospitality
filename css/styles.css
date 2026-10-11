@@ -326,9 +326,9 @@ section:last-of-type { border-bottom: none; }
 .card:nth-child(3) .card-badge { background: var(--color-vintage-yellow); color: var(--color-text); }
 .card-badge .wisp {
   position: absolute;
-  top: -8px;
+  top: -22px;
   left: 36px;
-  width: 48px;
+  width: 72px;
   height: auto;
   pointer-events: none;
 }
