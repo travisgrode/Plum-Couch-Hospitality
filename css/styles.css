@@ -311,6 +311,31 @@ section:last-of-type { border-bottom: none; }
 
 .card p { color: var(--color-text-muted); margin: 0; font-size: 0.95rem; }
 
+.deliverables-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 32px;
+}
+.deliverables-list li {
+  position: relative;
+  padding-left: 30px;
+  color: var(--color-text);
+}
+.deliverables-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+@media (max-width: 640px) {
+  .deliverables-list { grid-template-columns: 1fr; }
+}
+
 .stat-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
