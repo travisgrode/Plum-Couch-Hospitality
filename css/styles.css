@@ -525,6 +525,7 @@ blockquote.pull {
   .principle-list li.principle-item { padding: 26px 0; gap: 14px; }
   .stat-row { grid-template-columns: 1fr; gap: 32px; }
   .stat .num { font-size: 2rem; }
+  .section-title-icon { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
 /* ---- Hero emblem: standalone crest above a hero H1 ---- */
