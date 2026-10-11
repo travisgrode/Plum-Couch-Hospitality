@@ -526,6 +526,7 @@ blockquote.pull {
   .stat-row { grid-template-columns: 1fr; gap: 32px; }
   .stat .num { font-size: 2rem; }
   .section-title-icon { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .section-title-icon .section-emblem { width: 130px; }
 }
 
 /* ---- Hero emblem: standalone crest above a hero H1 ---- */
