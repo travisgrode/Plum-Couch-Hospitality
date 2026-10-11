@@ -330,10 +330,10 @@ section:last-of-type { border-bottom: none; }
 .card:nth-child(3) .card-badge { background: var(--color-vintage-yellow); color: var(--color-text); }
 .card-badge .wisp {
   position: absolute;
-  top: -6px;
-  left: 38px;
-  width: 46px;
-  height: 24px;
+  top: -8px;
+  left: 36px;
+  width: 48px;
+  height: auto;
   pointer-events: none;
 }
 
