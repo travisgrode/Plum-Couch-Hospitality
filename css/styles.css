@@ -304,11 +304,7 @@ section:last-of-type { border-bottom: none; }
   padding: 28px;
   position: relative;
   box-shadow: 0 6px 16px rgba(59, 29, 36, 0.1);
-  transform: rotate(var(--tilt, 0deg));
 }
-.card:nth-child(1) { --tilt: -1deg; }
-.card:nth-child(2) { --tilt: 0.6deg; }
-.card:nth-child(3) { --tilt: -0.6deg; }
 
 /* Numbered stamp badge with a smoke-wisp trail, a small nod to the plane's
    contrail elsewhere on the site without repeating the icon itself. */
