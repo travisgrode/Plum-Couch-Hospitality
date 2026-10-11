@@ -302,6 +302,39 @@ section:last-of-type { border-bottom: none; }
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 28px;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(59, 29, 36, 0.1);
+  transform: rotate(var(--tilt, 0deg));
+}
+.card:nth-child(1) { --tilt: -1deg; }
+.card:nth-child(2) { --tilt: 0.6deg; }
+.card:nth-child(3) { --tilt: -0.6deg; }
+
+/* Numbered stamp badge with a smoke-wisp trail, a small nod to the plane's
+   contrail elsewhere on the site without repeating the icon itself. */
+.card-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-on-accent);
+  margin-bottom: 16px;
+}
+.card:nth-child(1) .card-badge { background: var(--color-accent-plum); }
+.card:nth-child(2) .card-badge { background: var(--color-accent); }
+.card:nth-child(3) .card-badge { background: var(--color-vintage-yellow); color: var(--color-text); }
+.card-badge .wisp {
+  position: absolute;
+  top: -6px;
+  left: 38px;
+  width: 46px;
+  height: 24px;
+  pointer-events: none;
 }
 
 .card h3 {
@@ -552,7 +585,7 @@ blockquote.pull {
   .stat .num { font-size: 2rem; }
   .section-title-icon { flex-direction: column; align-items: flex-start; gap: 10px; }
   .section-title-icon .section-emblem { width: 130px; }
-  .hero .eyebrow { font-size: 0.72rem; letter-spacing: 0.04em; }
+  .hero .eyebrow { font-size: 0.72rem; letter-spacing: 0.04em; margin-bottom: 28px; }
 }
 
 /* ---- Hero emblem: standalone crest above a hero H1 ---- */
