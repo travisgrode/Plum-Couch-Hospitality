@@ -143,6 +143,7 @@ nav.primary-nav a[aria-current="page"] {
   nav.primary-nav li { padding: 10px 0; border-top: 1px solid var(--color-border); }
   .site-header .wrap { flex-wrap: wrap; }
   .nav-toggle { display: inline-block; }
+  .brand-mark { height: 22px; }
 }
 
 /* ---- Hero ---- */
@@ -514,6 +515,16 @@ blockquote.pull {
 @media (max-width: 640px) {
   .post-card { flex-direction: column; gap: 16px; }
   .post-card-thumb { flex-basis: auto; width: 100%; }
+}
+
+/* Mobile spacing pass: more breathing room between repeating text blocks
+   and a clean single-column stack for the stat row, so the same copy reads
+   lighter on a narrow screen without cutting a word. */
+@media (max-width: 640px) {
+  .role-entry { padding: 32px 0; }
+  .principle-list li.principle-item { padding: 26px 0; gap: 14px; }
+  .stat-row { grid-template-columns: 1fr; gap: 32px; }
+  .stat .num { font-size: 2rem; }
 }
 
 /* ---- Hero emblem: standalone crest above a hero H1 ---- */
