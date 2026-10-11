@@ -319,7 +319,7 @@ section:last-of-type { border-bottom: none; }
 
 .stat { text-align: left; }
 .stat .num {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-size: 2.25rem;
   color: var(--color-text);
   display: block;
@@ -428,7 +428,7 @@ blockquote.pull {
   flex: 0 0 104px;
 }
 .role-figure .num {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-size: 2.5rem;
   line-height: 1;
   color: var(--color-text);
