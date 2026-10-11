@@ -140,7 +140,8 @@ nav.primary-nav a[aria-current="page"] {
     gap: 0;
     padding: 16px 0 8px;
   }
-  nav.primary-nav li { padding: 10px 0; border-top: 1px solid var(--color-border); }
+  nav.primary-nav li { border-top: 1px solid var(--color-border); }
+  nav.primary-nav li a { display: block; padding: 14px 4px; }
   .site-header .wrap { flex-wrap: wrap; }
   .nav-toggle { display: inline-block; }
   .brand-mark { height: 22px; }
