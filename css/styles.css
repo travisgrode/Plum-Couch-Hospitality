@@ -395,6 +395,15 @@ blockquote.pull {
   color: var(--color-text);
 }
 
+blockquote.pull cite {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--color-text-muted);
+}
+
 /* ---- Post/case-study index list ---- */
 .grid-quotes {
   display: grid;
